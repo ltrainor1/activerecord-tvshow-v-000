@@ -1,2 +1,5 @@
 class Show < ActiveRecord::Base
-end 
+
+  self.highest_rating
+    self.order(rating: :desc).first
+end
