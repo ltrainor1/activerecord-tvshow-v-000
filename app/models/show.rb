@@ -25,7 +25,7 @@ def self.shows_by_alphabetical_order
 end
 
 def self.popular_shows
-  self.where(":rating > ?", 5)
+  self::find()->where(['>', 'rating', '5'])->all(); 
 end
 
 end
