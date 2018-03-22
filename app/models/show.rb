@@ -7,3 +7,4 @@ end
   def self.most_popular_show
     self.order(rating: :desc).first.title
 end
+end 
