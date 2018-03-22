@@ -10,10 +10,10 @@ end
 
 def self.lowest_rating
   self.order(rating: :asc).first.rating
-end 
+end
 
 def self.least_popular_show
-  self.order(rating: :asc).first.name 
-end 
+  self.order(rating: :asc).first.name
+end
 
 end
