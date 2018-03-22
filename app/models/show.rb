@@ -24,4 +24,8 @@ def self.shows_by_alphabetical_order
   self.order(name: :asc)
 end
 
+def self.popular_shows
+  self.where(:rating > 5)
+end 
+
 end
